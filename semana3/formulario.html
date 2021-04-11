@@ -1,0 +1,48 @@
+<html>
+    <head>
+       <title >Formulario</title>
+    </head>
+    <body>
+        <p align="center" ><p1><b>Cuestionario de Cine</b></p1></p>
+        
+        <fieldset name="Datos Personales" align="center"><!--esta etiqueta es para poner en un cuadro-->
+            <legend>Datos Personales</legend><!--esta etiqueta es para que este el titulo en medio de la linea del cuadro-->
+            <form action="ejemplo.php" method="get">
+                Nombre:<br>
+                <input type="text" name="nombre" size="20" placeholder="Escriba su nombre" required><br>
+                Apellidos:<br>
+                <input type="text" name="apellidos" size="20" placeholder="Escriba su apellido" required><br>
+                DNI:<br>
+                <input type="text" name="DNI" size="20" placeholder="Escriba su DNI" required><br>
+                Edad:<br>
+                <input type="Edad" name=edad size="2" ><br>
+                Sexo:<br>
+                <select name="Sexo"><!--esta etiqueta es para hacer un cuadro desplegable con opciones-->
+                    <option>...</option>
+                    <option>Hombre</option>
+                    <option>Mujer</option>
+                </select>
+            </form>
+        </fieldset>
+            
+        <fieldset align="center">
+            <legend>Mejor Pelicula</legend>
+            <input type="radio" name="p1" value="1">El Padrino<br>
+            <!--type radio para que sea en circula lo forma de marcar
+            el name es importante para diferenciar de las demas opciones-->
+            <input type="radio" name="p1" value="2" >Crepusculo<br>
+            <input type="radio" name="p1" value="3">Los odiosos 8<br>
+            <input type="radio" name="p1" value="4">Anatomia de un asesinato
+        </fieldset>
+        <fieldset align="center">
+            <legend>Tu opinion</legend>
+            <textarea name="comentarios" rows="10" cols="40"></textarea>
+            <form method="get" action="">
+
+                <input type="submit" value="Enviar" />
+                
+                </form>
+        </fieldset>
+        
+    </body>
+</html>
